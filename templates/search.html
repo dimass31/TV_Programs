@@ -1,0 +1,7 @@
+{% extends 'search-form.html' %}
+{% block results %}
+    {% for i in broadcast %}
+        <p>Название  {{ i }}</p> <p> Описание {{ i.description }}</p>
+        <br>
+    {% endfor %}
+{% endblock %}
